@@ -1,0 +1,32 @@
+* {
+    /* border: solid black; */
+}
+/* .navBar {
+    display: flex;
+
+} */
+
+.navUl {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+    gap: 10px;
+    font-size:0;
+}
+
+.navLi {
+    margin-bottom: -10px;
+    font-size: .75rem;
+}
+
+.navText {
+    padding: 5px;
+}
+
+.navText:hover {
+    opacity: .7;
+    background-color: antiquewhite;
+    border-radius: 3px;
+}

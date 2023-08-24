@@ -1,0 +1,42 @@
+/* * {
+  border: solid black;
+} */
+
+.App {
+  text-align: center;
+  background-color: #3D6670;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  width: auto;
+  color: #9197AF;
+  font-family: Georgia, serif	;
+  max-width: 100vw;
+  margin: -10px;
+}
+/* .App-header {
+} */
+
+.imageContainer {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #A08B59;
+  width: 80vw;
+  align-self: center;
+  /* margin: .5em; */
+  padding: .5em;
+  padding-top: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* 
+Blueish:  3D6670
+pinky: D2A1A8
+lightGreen: A08B59
+brownGreen: 8E7651
+lightBlue/lialac: 9197AF
+*/
