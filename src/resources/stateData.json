@@ -1,0 +1,202 @@
+{
+    "WA": {
+        "fullName": "Washington", 
+        "message": "Born and raised in Seattle.  Growing up in the emerald city i have a deep appreciation for nature and our place within it.  The booming tech world, particularly in Seattle has shown me first hand the impact technology can have on our lives.  I hope to make it a good one!"
+    },
+    "OR": {
+        "fullName": "Oregon",
+        "message": "Frequently driven thruough and a festive new years celebration in 2019-2020."
+    },
+    "CA": {
+        "fullName": "California",
+        "message": "I loved to Claremont CA to attend Pitzer College.  While I studied Physics the interdicuplinary nature of the school engaged my desire to talk pholosophy and politics with friends"
+    },
+    "ID": {
+        "fullName": "Idaho",
+        "message": "Moved to Ketchum Idaho for the summer through spring of 2020-2021.  There I were the humble beginnings of both my interest in web development and living in a ski town!  While remote working for Los Alamos National Lab I grew an interest for the web application development I was working on and began to persue this as a career path."
+    },
+    "NV": {
+        "fullName": "Nevada",
+        "message": "In 2021 while driving across the state, I happened across a beautiful hot spring in the middle of no where!"
+    },
+    "AZ": {
+        "fullName": "Arizona",
+        "message": "Another state driven through.  Sedona inspired beautiful dreams and warm hikes."
+    },
+    "UT": {
+        "fullName": "Utah",
+        "message": "The site of many a drive through and the occasional week long stay.  From skiing in the Salt Lake area to biking slick rock in Moab, Utah has a special place in my heart."
+    },
+    "WY": {
+        "fullName": "Wyoming",
+        "message": "Something yet to be explored"
+    },
+    "MT": {
+        "fullName": "Montana",
+        "message": "I accompanied my brother on a roadtrip through montana when was in college and gawked at the untouched nature all around me."
+    },
+    "CO": {
+        "fullName": "Colorado",
+        "message": "In 2021 I decided to persue my life long desire to move and work in a ski town.  While taking time off coding I learned entirely new skills of bartending and skiing down double black mountains.  The second season I was in Colorado I took on yet another new position of ski technician.  In these two years I gained invaluable skills working with people every day and finding a balance between working hard and playing hard."
+    },
+    "NM": {
+        "fullName": "New Mexico",
+        "message": "In the fall of 2019 I moved to New Mexico with the intension of living there for years to come with my new shiny- post grad job.  In the ensuing few months I dove into testing and building data processing suites.  I also dove into New Mexico's Thatch Green Chili sauce.  Before I was able to really get into the swing of things, covid-19 hit, and I high-tailed it out of there to be with family and friends during the next few years.  The high desert and magnificent mountains are still constantly on my mind."
+    },
+    "ND": {
+        "fullName": "North Dakota",
+        "message": "Something yet to be explored"
+    },
+    "SD": {
+        "fullName": "South Dakota",
+        "message": "Roadtripped with my brother to Badlands National park."
+    },
+    "NE": {
+        "fullName": "Nabraska",
+        "message": "Something yet to be explored"
+    },
+    "KS": {
+        "fullName": "Kansas",
+        "message": "Drove throguh on my way east, and I think there is more to see."
+    },
+    "OK": {
+        "fullName": "Oklahoma",
+        "message": "Never been, but I have seen the classic play which goes down with imfamy in my family."
+    },
+    "TX": {
+        "fullName": "Texas",
+        "message": "Only ever flown through the Dallas Fortwarth Airport.  Whole lot to explore there!"
+    },
+    "LA": {
+        "fullName": "Louisiana",
+        "message": "Something yet to be explored."
+    },
+    "AR": {
+        "fullName": "Arkansas",
+        "message": "Drove through just a corner. I hear there is some great mountain biking in these parts."
+    },
+    "MO": {
+        "fullName": "Missouri",
+        "message": "Stayed the night on a road trip.  It was pouring rain.  I also saw two horse drawn carrages on the side of the highway."
+    },
+    "MN": {
+        "fullName": "Minnesota",
+        "message": "Something yet to be explored"
+    },
+    "WI": {
+        "fullName": "Wisconsin",
+        "message": "As my grandparents home state, I have been lucky enouhg to explore the madison area.  There is somehitng pretty special about drinking a beer at the student union on the lake in late June."
+    },
+    "IL": {
+        "fullName": "Illinois",
+        "message": "With my parents and brother attending college in the Chicago area, I have been to the bean."
+    },
+    "MI": {
+        "fullName": "Michigan",
+        "message": "Drove through to see my fam.  Gotta love the midwestern feels."
+    },
+    "IN": {
+        "fullName": "Indiana",
+        "message": "Drove through Gary and it was stinky."
+    },
+    "KY": {
+        "fullName": "Kentucky",
+        "message": "Something yet to be explored."
+    },
+    "TN": {
+        "fullName": "Tennessee",
+        "message": "Visited Nashville to see a friend perform.  A gorgous summer night was the perfect introduction to the city."
+    },
+    "MS": {
+        "fullName": "Mississippi",
+        "message": "Slipped through the north east corner on a roadtrip but I want to float that river!"
+    },
+    "AL": {
+        "fullName": "Alabama",
+        "message": "Driving through the south was a real novelty for someone from the PNW.  Going though cities like Montgomery and Selma was like driving through history."
+    },
+    "FL": {
+        "fullName": "Florida",
+        "message": "With my grandparents taking up residency on the gulf coast I've had the pleasure of humid days spent at the beaches.  In 2013 I went parasailing off the back of a boat there!"
+    },
+    "GA": {
+        "fullName": "Georgia",
+        "message": "My path was unexpectaly drawn to Georgia with Ada Developers Academy in the winter of 2023.  At Ada I learned all the tech stacks I was missing while at LANL.  With a bolstered knowledge of full stack web developemnt I was able to create this web site!  While my time in Atlanta was brief, it was full of beautiful people and lovely biking."
+    },
+    "SC": {
+        "fullName": "South Carolina",
+        "message": "Something yet to be explored."
+    },
+    "NC": {
+        "fullName": "North Carolina",
+        "message": "Something yet to be explored."
+    },   
+    "VA": {
+        "fullName": "Virginia",
+        "message": "The site of my parents late 20's we have been back to visit the DC area a number of times.  Though the legends of heat and bitter cold have been enough to keep me off the eastern seaboard thus far."
+    },   
+    "WV": {
+        "fullName": "West Virginia",
+        "message": "Something yet to be explored."
+    },   
+    "OH": {
+        "fullName": "Ohio",
+        "message": "Something yet to be explored."
+    },   
+    "PA": {
+        "fullName": "Pennsylvania",
+        "message": "Something yet to be explored."
+    },   
+    "MD": {
+        "fullName": "Maryland",
+        "message": "Visiting the surrounding DC area, I have diped into the baltimore area a few times.  Nothing to report."
+    },   
+    "DC": {
+        "fullName": "Washingtion DC",
+        "message": "It's cool to see the govermnent of the US at work.  In 2009 I was lucky enough to get to attend the Inaguration of Barak Obama.  At only 12 years old it was impressed upon me the weight of the moment, baring witenss to a historic moment.  Since then politics and govenment have always held an important place in my life."
+    },   
+    "DE": {
+        "fullName": "Delaware",
+        "message": "Something yet to be explored"
+    },   
+    "NJ": {
+        "fullName": "New Jersey",
+        "message": "Newark is NOT New York, but it is very close. -- Wisdome from me traveling through Newark Airport"
+    },   
+    "NY": {
+        "fullName": "New York",
+        "message": "An early spring college tour of New York State proved to disswade me from attending any of the schools up there as it was quite cold and didnt stand a chance next to Southern California's alure.  In 2021 I made my way to the big Apple for the first time in my life.  A month spent walking all of manhattan and into Brooklyn and Queens left an impression of the diversity and bustling nature of the east coast."
+    },   
+    "CT": {
+        "fullName": "Connecticut",
+        "message": "I have family who lives in rural Connecticut.  The trees and quaintness of new england always feel like home when I come back."
+    },   
+    "MA": {
+        "fullName": "Massachusets",
+        "message": "Coming from the west coast, in the eyes of a child, the cobblestone streets of Boston seemed ancient."
+    },   
+    "NH": {
+        "fullName": "New Hampshire",
+        "message": "Childhood summer vacations spent at my grandparents cabin on Crystal were magic, always accompanied by a gigantic serving of icecream.  This starting me on my adventrue towards veganism."
+    },   
+    "VT": {
+        "fullName": "Vermont",
+        "message": "Visited the Ben & Jerry's factory and got a cool t-shirt"
+    },   
+    "ME": {
+        "fullName": "Maine",
+        "message": "A family reunion cerca 2006 brought me to Bar Harbor.  I ate some lobster."
+    },   
+    "RI": {
+        "fullName": "Rhode Island",
+        "message": "I rolled through Rhode Island for a sailing trip in early september 2021.  Gave off classic new england vibes.  A little out of my west coast comfort zone."
+    },   
+    "AK": {
+        "fullName": "Alaska",
+        "message": "I visited as a young child and went to a lumberjack show.  I still have the slice of wood they gave me!"
+    },   
+    "HI": {
+        "fullName": "Hawaii",
+        "message": "A couple of highly coveded vacations took me to Hawaii and Maui.  On Maui I took on an epic bike around the north side of the island.  Stopped for some banana bread and coconut candy, IYKYK."
+    }
+}

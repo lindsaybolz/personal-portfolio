@@ -1,62 +1,341 @@
 import React, { useState } from "react";
 import USAMap from "react-usa-map";
-import './Map.css'
-
+import './Map.css';
+// import data from '../resources/stateData.json';
+// console.log('TESTING!')
+const stateData = {
+    "WA": {
+        "id": 1,
+        "fullName": "Washington",
+        "message": "Born and raised in Seattle. Growing up in the emerald city I have a deep appreciation for nature and our place within it. The booming tech world, particularly in Seattle has shown me first hand the impact technology can have on our lives. I hope to make it a good one! While I have not lived in Seattle full time since highschool, various summers and intermittent trips stoke my love for the pacific northwest."
+    },
+    "OR": {
+        "id": 2,
+        "fullName": "Oregon",
+        "message": "I have frequently driven through on my way to California.  These trips along with a festive new year's celebration in 2019-2020 have colored Oregon with forest green tinted glasses."
+    },
+    "CA": {
+        "id": 3,
+        "fullName": "California",
+        "message": "I moved to Claremont CA to attend Pitzer College. While I studied Physics, the interdisciplinary nature of the school engaged my desire to talk philosophy and politics with friends.  I also have been lucky enough to spend time remote working in California during the pandemic.  While working in the beginnings of my time at Los Alamos I worked on building testing suites for data processing code.  Having spent many years I have explored many parts of the grand state from San Diego all the way to Humboldt County."
+    },
+    "ID": {
+        "id": 4,
+        "fullName": "Idaho",
+        "message": "I moved to Ketchum Idaho for the summer through spring of 2020-2021. While remote working, there were the humble beginnings of both my interest in web development and living in a ski town! I grew an interest for the web application development I was working on and began to pursue this as a career path.  I also was introduced to Mountain biking in this wonderful setting.  Both of these passions have followed me even since leaving Idaho."
+    },
+    "NV": {
+        "id": 5,
+        "fullName": "Nevada",
+        "message": "In 2021 while driving across the state, I happened across a beautiful hot spring in the middle of nowhere pressed up against some mountains! While Las Vegas holds little allure for me, I could definitely spend some more time at that hot spring."
+    },
+    "AZ": {
+        "id": 6,
+        "fullName": "Arizona",
+        "message": "Another state I have driven through. Sedona inspired beautiful dreams and warm hikes."
+    },
+    "UT": {
+        "id": 7,
+        "fullName": "Utah",
+        "message": "The site of many a drive through and the occasional week-long stay. From skiing in the Salt Lake area to biking slick rock in Moab, Utah has a special place in my heart.  On my latest camping trip I stumbled upon the Glen Canyon National Recreation Area which has held my awe ever since."
+    },
+    "WY": {
+        "id": 8,
+        "fullName": "Wyoming",
+        "message": "Something yet to be explored."
+    },
+    "MT": {
+        "id": 9,
+        "fullName": "Montana",
+        "message": "I accompanied my brother on a road trip through Montana when I was in college and gawked at the untouched nature all around me.  On another highschool era road trip I stopped by Flathead Lake and drank in the clear skies and vast scenery."
+    },
+    "CO": {
+        "id": 10,
+        "fullName": "Colorado",
+        "message": "In 2021 I decided to pursue my lifelong desire to move and work in a ski town. While taking time off coding I learned entirely new skills of bartending and skiing down double black mountains. The second season I was in Colorado I took on yet another new position of ski technician. In these two years I gained invaluable skills working with people every day and finding a balance between working hard and playing hard."
+    },
+    "NM": {
+        "id": 11,
+        "fullName": "New Mexico",
+        "message": "In the fall of 2019 I moved to New Mexico with the intention of living there for years to come with my new shiny post grad job. In the ensuing few months I dove into testing and building data processing suites. I also dove into New Mexico's Thatch Green Chili sauce. Before I was able to really get into the swing of things, covid-19 hit, and I high-tailed it out of there to be with family and friends during the next few years. While my physical time was brief, I was still connected to the state as I remote-worked for the next couple years."
+    },
+    "ND": {
+        "id": 12,
+        "fullName": "North Dakota",
+        "message": "Something yet to be explored"
+    },
+    "SD": {
+        "id": 13,
+        "fullName": "South Dakota",
+        "message": "Road tripped with my brother to Badlands National park.  We also stopped for a burrito in Wall Drug."
+    },
+    "NE": {
+        "id": 14,
+        "fullName": "Nebraska",
+        "message": "Something yet to be explored."
+    },
+    "KS": {
+        "id": 15,
+        "fullName": "Kansas",
+        "message": "Drove through on my way east, and I think there is more to see.  A visiting artist in my college ceramics course was from Wichita.  Their exhibition Horizontes is the one thing I would visit for!"
+    },
+    "OK": {
+        "id": 16,
+        "fullName": "Oklahoma",
+        "message": "Never been, but I have seen the classic play which goes down with infamy in my family.  Cerca 2006 a family reunion was brewing and we attended an outdoor performance of the musical performance.  Among other circumstances, our grandma dozed off into a rather loud snore and the cousins' collective pre-teen attention spans were less than entertained."
+    },
+    "TX": {
+        "id": 17,
+        "fullName": "Texas",
+        "message": "I’ve only ever flown through the Dallas Fort Worth Airport. Whole lot to explore there!"
+    },
+    "LA": {
+        "id": 18,
+        "fullName": "Louisiana",
+        "message": "Something yet to be explored."
+    },
+    "AR": {
+        "id": 19,
+        "fullName": "Arkansas",
+        "message": "I drove through just a corner. While visiting a friend I explored a beautiful bike park where there were many built out mountain bike trails.  The slogan on the license plate of Arkansas lived up to the name as ‘the natural state’."
+    },
+    "MO": {
+        "id": 20,
+        "fullName": "Missouri",
+        "message": "Stayed the night on a road trip. It was pouring rain. I also saw two horse drawn carriages on the side of the highway."
+    },
+    "MN": {
+        "id": 21,
+        "fullName": "Minnesota",
+        "message": "Something yet to be explored."
+    },
+    "WI": {
+        "id": 22,
+        "fullName": "Wisconsin",
+        "message": "As my grandparents' home state, I have been lucky enough to explore the Madison area. There is something pretty special about drinking a beer at the student union on the lake in late June."
+    },
+    "IL": {
+        "id": 23,
+        "fullName": "Illinois",
+        "message": "With my parents and brother attending college in the Chicago area, I have been to the bean."
+    },
+    "MI": {
+        "id": 24,
+        "fullName": "Michigan",
+        "message": "I drove through to see my fam. A warm early summer evening drive through air much more humid than I am used to, I remember sending me into a sedated bliss.  Next time I will stop at the amusement parks."
+    },
+    "IN": {
+        "id": 25,
+        "fullName": "Indiana",
+        "message": "I drove through Gary and it was stinky."
+    },
+    "KY": {
+        "id": 26,
+        "fullName": "Kentucky",
+        "message": "Something yet to be explored."
+    },
+    "TN": {
+        "id": 27,
+        "fullName": "Tennessee",
+        "message": "I visited Nashville to see a friend perform. A gorgeous summer night was the perfect introduction to the city."
+    },
+    "MS": {
+        "id": 28,
+        "fullName": "Mississippi",
+        "message": "I cruised through on a road trip or two, but nothing much to report.  The Mississippi River was as grand as they say."
+    },
+    "AL": {
+        "id": 29,
+        "fullName": "Alabama",
+        "message": "Driving through the south was a real novelty for someone from the PNW. Going through cities like Montgomery and Birminghagm was like driving through history."
+    },
+    "FL": {
+        "id": 30,
+        "fullName": "Florida",
+        "message": "With my grandparents taking up residency on the gulf coast I've had the pleasure of humid days spent at the beaches. In 2013 I went parasailing off the back of a boat!"
+    },
+    "GA": {
+        "id": 31,
+        "fullName": "Georgia",
+        "message": "My path was unexpectedly drawn to Georgia with Ada Developers Academy in the winter of 2023. At Ada I learned all the tech stacks I was missing while at Los Alamos. With a bolstered knowledge of full stack web development I was able to create this web site! While my time in Atlanta was brief, new experiences that get me out of my comfort zone are exactly how I grow and thrive."
+    },
+    "SC": {
+        "id": 32,
+        "fullName": "South Carolina",
+        "message": "Something yet to be explored."
+    },
+    "NC": {
+        "id": 33,
+        "fullName": "North Carolina",
+        "message": "Something yet to be explored."
+    },
+    "VA": {
+        "id": 34,
+        "fullName": "Virginia",
+        "message": "As my parents lived here in their late 20's, I have visited the DC area a number of times. Though the legends of heat and bitter cold have been enough to keep me off the eastern seaboard."
+    },
+    "WV": {
+        "id": 35,
+        "fullName": "West Virginia",
+        "message": "Something yet to be explored."
+    },
+    "OH": {
+        "id": 36,
+        "fullName": "Ohio",
+        "message": "Something yet to be explored."
+    },
+    "PA": {
+        "id": 37,
+        "fullName": "Pennsylvania",
+        "message": "Something yet to be explored."
+    },
+    "MD": {
+        "id": 38,
+        "fullName": "Maryland",
+        "message": "Visiting the surrounding DC area, I have dipped into the Baltimore area a few times. Not much to report."
+    },
+    "DC": {
+        "id": 39,
+        "fullName": "Washington DC",
+        "message": "It's cool to see the government of the US at work. In 2009 I was lucky enough to get to attend the inauguration of Barack Obama. At only 12 years old it was impressed upon me the weight of the moment, bearing witness to a historic moment. Since then politics and government have always held an important place in my life."
+    },
+    "DE": {
+        "id": 40,
+        "fullName": "Delaware",
+        "message": "Something yet to be explored."
+    },
+    "NJ": {
+        "id": 41,
+        "fullName": "New Jersey",
+        "message": "Newark is NOT New York, but it is very close. -- Wisdom from me traveling through Newark Airport"
+    },
+    "NY": {
+        "id": 42,
+        "fullName": "New York",
+        "message": "An early spring college tour of New York State proved to dissuade me from attending any of the schools up there as it was quite cold and didn't stand a chance next to Southern California's allure. In 2021 I made my way to the big Apple for the first time in my life. A month spent walking all of manhattan and into Brooklyn and Queens left an impression of the diversity and bustling nature of the east coast."
+    },
+    "CT": {
+        "id": 43,
+        "fullName": "Connecticut",
+        "message": "I have family who lives in rural Connecticut. The trees and quaintness of New England always feel like home on the other side of the country."
+    },
+    "MA": {
+        "id": 44,
+        "fullName": "Massachusetts",
+        "message": "Coming from the west coast, in the eyes of a child, the cobblestone streets of Boston seemed ancient.  The historic and contemporary culture of the city draws me in every time I visit."
+    },
+    "NH": {
+        "id": 45,
+        "fullName": "New Hampshire",
+        "message": "Childhood summer vacations spent at my grandparents cabin on Crystal Lake, NH, were magic, always accompanied by a gigantic serving of icecream"
+    },
+    "VT": {
+        "id": 46,
+        "fullName": "Vermont",
+        "message": "I visited the Ben & Jerry's factory and got a cool t-shirt."
+    },
+    "ME": {
+        "id": 47,
+        "fullName": "Maine",
+        "message": "A family reunion around 2006 brought me to Bar Harbor. I ate some lobster."
+    },
+    "RI": {
+        "id": 48,
+        "fullName": "Rhode Island",
+        "message": "I rolled through Rhode Island for a sailing trip in early September 2021. The state gave off classic New England vibes. A little out of my west coast comfort zone."
+    },
+    "AK": {
+        "id": 49,
+        "fullName": "Alaska",
+        "message": "AA 12 I visited and went to a lumberjack show. I still have the slice of wood they gave me!"
+    },
+    "HI": {
+        "id": 50,
+        "fullName": "Hawaii",
+        "message": "A couple of highly anticipated vacations took me to Hawaii and Maui. On Maui I took on an epic bike around the north side of the island. Stopped for some banana bread and coconut candy, IYKYK."
+    },
+    "IA": {
+        "id": 51,
+        "fullName": "Iowa",
+        "message": "Something yet to be explored."
+    }
+}    
+    
 const Map = () => { 
-  const stateData = {
-    "Washington": "Born and raised in Seattle. ",
-    "Oregon": "Frequently driven thruough and a festive new years celebration in 2019-2020.",
-    'California': 'I oved to Claremont CA to attend Pitzer College.  While I studied Physics the interdicuplinary nature of the school engaged my desire to talk pholosophy and politics with friends',
-  
-  }
+    // let stateData = {}
+    // fetch('../resources/stateData.json')
+    //     .then((response) => {
+    //         response.json()
+    //     })
+    //     .then((json) => {
+    //         console.log(json)
+    //         // stateData = json
+    //     })
+    //     .catch(error => console.log(error))
+    //     .catch(error => console.log(error))
 
-  const [description, setDescriptoin] = useState("Click around to see what I've been up to and where!")
-  // Mandatory
-  const mapHandler = (event) => {
-    console.log(event.target.dataset.name)
-    // alert(event.target.dataset.name);
-  };
-
-  const statesCustomConfig = () => {
-    return {
-      "CO": {
-        fill: "#A08B59",
-        clickHandler: (event) => console.log('Custom handler for NJ', event.target.dataset)
-      },
-      "WA": {
-        fill: "#A08B59"
-      },
-      "CA": {
-        fill: "#A08B59"
-      },
-      "ID": {
-        fill: "#A08B59"
-      },
-      "GA": {
-        fill: "#A08B59"
-      },
-      "UT": {
-        fill: "#A08B59"
-      },
+    const [description, setDescription] = useState("Click around to see what I've been up to and where!")
+    // console.log(stateData)
+    if (false) {
+        setDescription("Click around to see what I've been up to and where!")
+    }
+    // Mandatory
+    const mapHandler = (event) => {
+        console.log(event.target.dataset.name)
+        let fullName = stateData[event.target.dataset.name]['fullName']
+        let message = stateData[event.target.dataset.name]['message']
+        setDescription(`${fullName}: ${message}`)
+        // alert(event.target.dataset.name);
     };
-  };
+
+    const statesCustomConfig = () => {
+        return {
+        "CO": {
+            fill: "#A08B59",
+            // clickHandler: (event) => console.log('Custom handler for NJ', event.target.dataset)
+        },
+        "WA": {
+            fill: "#A08B59"
+        },
+        "CA": {
+            fill: "#A08B59"
+        },
+        "ID": {
+            fill: "#A08B59"
+        },
+        "GA": {
+            fill: "#A08B59"
+        },
+        "UT": {
+            fill: "#A08B59"
+        },
+        };
+    };
 
 
-  return (
-    <div className="mapContainer">
-      <USAMap 
-        onClick={mapHandler} 
-        width={'80vw'}
-        height={'auto'}
-        title='Lindsays Map'
-        defaultFill='#D2A1A8'
-        customize={statesCustomConfig()}
-        />
-      <div className="mapDescription">
-        {description}
-      </div>
-    </div>
-  )
+    return (
+        <div className="mapContainer">
+        <USAMap 
+            onClick={mapHandler} 
+            width={'80vw'}
+            height={'auto'}
+            title='Lindsays Map'
+            defaultFill='#D2A1A8'
+            customize={statesCustomConfig()}
+            />
+        <div className="mapKey">
+            <div className="bigHitters item">
+            Big Hitters
+            </div>
+            <div className="somethingFun item">
+            Something fun
+            </div>
+        </div>
+        <div className="mapDescription">
+            {description}
+        </div>
+        </div>
+    )
 }
 
 export default Map;
