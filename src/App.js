@@ -4,8 +4,7 @@ import NavBar from './components/NavBar';
 import About from './components/About';
 import Skills from './components/Skills';
 import Map from './components/Map';
-
-// mapboxgl.accessToken = ''
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +13,7 @@ function App() {
       <About />
       <Map />
       <Skills />
+      <Footer />
     </div>
   );
 }

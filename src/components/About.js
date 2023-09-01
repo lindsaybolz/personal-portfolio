@@ -7,7 +7,7 @@ const About = () => {
       <div className='connectionsContainer'>
         <div className='emailPhone'>
           <div>
-            lindsaybolzwilson@gamil.com | (206) 910 - 0921
+            <a className='email' href={'mailto:lindsaybolzwilson@gamil.com'}>lindsaybolzwilson@gamil.com</a> | (206) 910 - 0921
           </div>
         </div>
         <div className='logos'>
@@ -31,7 +31,7 @@ const About = () => {
       </div>
       <img 
         src={require('../resources/profile-pic.jpg')}
-        height={200} 
+        width={'80%'} 
         alt='Portrate of Lindsay on a lake in a puffy green jacket'
         style={{borderRadius: 20}}
         />

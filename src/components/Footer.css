@@ -1,0 +1,44 @@
+.contact {
+    /* background-color: #D2A1A8; */
+
+}
+
+.contactInfo {
+    /* color: #D2A1A8; */
+    /* padding-top: .5em; */
+}
+
+.contactInfoContainer {
+    border: solid;
+    /* border-top: solid; */
+    /* border-bottom: solid; */
+    margin-top: .5em;
+    border-radius: 20px;
+    border-color: #D2A1A8;
+    display: flex;
+    flex-direction: column;
+    padding: .25em;
+    background-color: #ffd2d9;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* align-self: center; */
+    width: 50vw;
+}
+
+a {
+    color: #9197AF;
+}
+
+.footerContainer {
+    border-top: solid;
+    border-color: #A08B59;
+    width: 80vw;
+    align-self: center;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

@@ -10,7 +10,7 @@ const NavBar = () => {
           <p className='navText'>About</p>
         </li>
         <li className='navLi'>
-          <p className='navText'>Experiences</p>
+          <p className='navText'>Adventures</p>
         </li>
         <li className='navLi'>
           <p className='navText'>Skills</p>

@@ -43,3 +43,12 @@ path:hover {
     opacity: 0.50;
     cursor: pointer;
 }
+
+.statePhoto {
+    border-radius: 20px;
+    margin-top: .5em;
+}
+.usaMap {
+    height: auto;
+    width: 80vw;
+}
