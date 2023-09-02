@@ -5,14 +5,7 @@
     justify-content: center;
     align-content: center;
     padding: .25em;
-
-}
-.skillsHeader {
-    padding-top: 10px;
-    border-top-style: solid;
-    border-color: #A08B59;
-    width: 80vw;
-    align-self: center;
+    
 }
 
 .skill:hover {
@@ -23,6 +16,13 @@
     opacity: .6;
 }
 
+.skillsHeader {
+    padding-top: 10px;
+    border-top-style: solid;
+    border-color: #A08B59;
+    width: 80vw;
+    align-self: center;
+}
 
 .skillsContainer {
     background-color: #3D6670;
@@ -30,8 +30,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-  }
+    
+}
 
 .skillsList {
     display: flex;

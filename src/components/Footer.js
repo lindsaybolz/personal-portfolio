@@ -3,14 +3,14 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className='footerContainer'>
+    <div className='footerContainer' id='footer'>
         <div className='contactMessage'>
           Contact me!  Any questions about my adventures, coding experiences, or anything inbetween, I would love to chat!
         </div>
         <div className='contactInfoContainer'>
           <div className='contactInfo'>
             <div>
-              <a href={'mailto:lindsaybolzwilson@gamil.com'}>lindsaybolzwilson@gamil.com</a> | (206) 910 - 0921
+              <a className='footerEmail' href={'mailto:lindsaybolzwilson@gamil.com'}>lindsaybolzwilson@gamil.com</a> | (206) 910 - 0921
             </div>
           </div>
           <div className='logos'>

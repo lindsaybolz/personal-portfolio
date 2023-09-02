@@ -1,10 +1,23 @@
-* {
-    /* border: solid black; */
+.navBar {
+    margin: .5em;
+    width: 80vw;
+    align-self: center;
 }
-/* .navBar {
-    display: flex;
 
-} */
+.navLi {
+    font-size: .75rem;
+}
+
+.navText {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.navText:hover {
+    opacity: .7;
+    background-color: antiquewhite;
+    border-radius: 3px;
+}
 
 .navUl {
     list-style: none;
@@ -14,19 +27,4 @@
     margin: 0px;
     gap: 10px;
     font-size:0;
-}
-
-.navLi {
-    margin-bottom: -10px;
-    font-size: .75rem;
-}
-
-.navText {
-    padding: 5px;
-}
-
-.navText:hover {
-    opacity: .7;
-    background-color: antiquewhite;
-    border-radius: 3px;
 }

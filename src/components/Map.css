@@ -1,19 +1,12 @@
-/* * {
-    border: solid;
-} */
-
 .bigHitters {
     background-color: #A08B59;
-}
-
-.somethingFun {
-    background-color: #D2A1A8;
 }
 
 .item {
     border-radius: 5px;
     padding: 5px;
 }
+
 .mapContainer {
     padding-top: .25em;
     width: 80vw;
@@ -42,6 +35,10 @@ path {
 path:hover {
     opacity: 0.50;
     cursor: pointer;
+}
+
+.somethingFun {
+    background-color: #D2A1A8;
 }
 
 .statePhoto {

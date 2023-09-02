@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import USAMap from "react-usa-map";
 import './Map.css';
 import stateData from '../resources/stateData.json';
-    
+import { HashScroll } from "react-hash-scroll";
+
 const Map = () => { 
     const [description, setDescription] = useState("Click around to see what I've been up to and where!")
     const [image, setImage] = useState("")
@@ -13,7 +14,6 @@ const Map = () => {
         let fullName = stateData[event.target.dataset.name]['fullName']
         let message = stateData[event.target.dataset.name]['message']
         setDescription(`${fullName}: ${message}`)
-        let newImage = []
         if (stateData[event.target.dataset.name]['photo']) {
             let photoPath = stateData[event.target.dataset.name]['photo']
             setImage(
@@ -21,7 +21,7 @@ const Map = () => {
                     <img 
                         className='statePhoto'
                         src={require(`${photoPath}`)}
-                        alt={`Image related to Lindsay in ${stateData[event.target.dataset.name]['fullName']}`}
+                        alt={`Lindsay in ${stateData[event.target.dataset.name]['fullName']}`}
                         height={200}
                         />
                 </div>
@@ -37,7 +37,8 @@ const Map = () => {
 
 
     return (
-        <div className="mapContainer">
+        // <HashScroll hash='#adventures' >
+        <div className="mapContainer" id='adventures'>
         <USAMap 
             className='usaMap'
             onClick={mapHandler} 
@@ -62,6 +63,7 @@ const Map = () => {
             {image}
         </div>
         </div>
+        // </HashScroll>
     )
 }
 
