@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='contactInfoContainer'>
           <div className='contactInfo'>
             <div>
-              <a className='footerEmail' href={'mailto:lindsaybolzwilson@gamil.com'}>lindsaybolzwilson@gamil.com</a> | (206) 910 - 0921
+              <a className='footerEmail' href={'mailto:lindsaybolzwilson@gmail.com'}>lindsaybolzwilson@gmail.com</a> | (206) 910 - 0921
             </div>
           </div>
           <div className='logos'>
