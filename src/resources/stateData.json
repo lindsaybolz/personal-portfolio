@@ -254,7 +254,8 @@
     "MA": {
         "id": 44,
         "fullName": "Massachusetts",
-        "message": "Coming from the west coast, in the eyes of a child, the cobblestone streets of Boston seemed ancient.  The historic and contemporary culture of the city draws me in every time I visit."
+        "message": "Coming from the west coast, in the eyes of a child, the cobblestone streets of Boston seemed ancient.  The historic and contemporary culture of the city draws me in every time I visit.",
+        "photo": "./stateImages/massachusetts.jpeg"
     },
     "NH": {
         "id": 45,
@@ -269,7 +270,8 @@
     "ME": {
         "id": 47,
         "fullName": "Maine",
-        "message": "A family reunion around 2006 brought me to Bar Harbor. I ate some lobster."
+        "message": "A family reunion around 2006 brought me to Bar Harbor. I ate some lobster.",
+        "photo": "./stateImages/maine.jpeg"
     },
     "RI": {
         "id": 48,

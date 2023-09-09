@@ -3,7 +3,7 @@ a {
 }
 
 .contact {
-    background-color: #3D6670;
+    /* background-color: #3D6670; */
     opacity: .8;
 
 }
@@ -14,9 +14,9 @@ a {
     display: flex;
     flex-direction: column;
     padding: .25em;
-    background-color: #D2A1A8;
+    /* background-color: #D2A1A8; */
     width: 60vw;
-    color: #3D6670;
+    /* color: #3D6670; */
 }
 
 .footerContainer {
@@ -29,8 +29,9 @@ a {
     flex-direction: column;
     align-items: center;
     font-size: .75em;
+    padding-top: 1em;
 }
 
 .footerEmail {
-    color: #3D6670;
+    /* color: #3D6670; */
 }
